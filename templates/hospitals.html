@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Compare</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #f0f0f0;
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+        header::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #branding {
+            float: left;
+        }
+        #branding img {
+            height: 50px; /* Adjust the height as needed */
+        }
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav li {
+            margin-right: 20px;
+        }
+        nav a, nav button {
+            background-color: rgb(222, 143, 140);
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover, nav button:hover {
+            background-color: rgb(229, 113, 109);
+        }
+        #content {
+            float: left;
+            width: 70%;
+            padding: 10px;
+        }
+        #sidebar {
+            float: right;
+            width: 30%;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            width: 60%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #e74c3c; /* Use the orange/red color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px;
+            border-bottom: 1px dotted #ccc;
+        }
+        /* Clearfix to prevent collapsing issues */
+        .container::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .title-container {
+            background-color: white;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+        .dropdown {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <img src="{{ url_for('static', filename='DigiDoctor.png') }}" alt="DigiDoctor">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('hacks_get') }}">Health Hax</a></li>
+                    <li><a href="{{ url_for('severity_get') }}">Symptom Severity</a></li>
+                    <li><a href="{{ url_for('dashboard_get') }}">Dashboard</a></li>
+                    <li><a href="{{ url_for('profile_get') }}">My Account</a></li>
+                    <li>
+                        <form action="{{ url_for('logout_post') }}" method="post" style="display:inline;">
+                            <button type="submit">Log Out</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="title-container">
+            <h1 class="title">Price Compare</h1>
+        </div>
+        <div id="content">
+        <p>Please list the operation you are looking for:</p>
+        <form action="/hospital" method="post">
+            <select name="operation">
+                <option value="appendix">Appendix Removal</option>
+                <option value="birth">Birth</option>
+                <option value="x-ray">X-ray</option>
+                <option value="cat-scan">CAT Scan</option>
+                <option value="mri">MRI</option>
+                <option value="blood">Blood Work</option>
+                <option value="tonsil">Tonsil Removal</option>
+                <option value="tnee">Knee</option>
+            </select>   
+        <button type="submit">Submit</button>
+    </form>
+    {% if jobs %}
+    <h3>Healthcare near you:</h3>
+    <p>Here are some different clinics and their prices</p>
+    <ul>
+    {% for job in jobs %}
+        <li>
+            <h3>{{ job[0] }}, cost: ${{ job[3] }}</h3>
+        </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+        
+        </div>
+    </div>
+</body>
+</html>

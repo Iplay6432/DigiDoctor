@@ -1,0 +1,84 @@
+{
+    "symptoms": [
+        {
+            "name": "Fever",
+            "recommendation": "Stay hydrated, rest, and take fever-reducing medications if needed."
+        },
+        {
+            "name": "Cough",
+            "recommendation": "Drink warm fluids, use cough drops, and consider a humidifier."
+        },
+        {
+            "name": "Fatigue",
+            "recommendation": "Get adequate rest, maintain a balanced diet, and stay hydrated."
+        },
+        {
+            "name": "Headache",
+            "recommendation": "Drink water, rest in a quiet place, use hot or cold compresses on your head, and use pain relievers if necessary."
+        },
+        {
+            "name": "Shortness-of-reath",
+            "recommendation": "Practice deep breathing, avoid triggers, stop exercise if necessary and seek medical attention if severe."
+        },
+        {
+            "name": "Nausea",
+            "recommendation": "Try drinking tea, drink clear/cold liquids, don't mix hot and cold foods, eat bland foods, and avoid strong odors."
+        },
+        {
+            "name": "Dizziness",
+            "recommendation": "Sit or lie down, hydrate, and avoid sudden movements."
+        },
+        {
+            "name": "Sore-throat",
+            "recommendation": "Gargle warm salt water, drink warm teas, and use throat lozenges."
+        },
+        {
+            "name": "Muscle-pain",
+            "recommendation": "Apply heat or cold packs, stretch gently, take over-the-counter pain relievers, and stay hydrated."
+        },
+        {
+            "name": "Joint-pain",
+            "recommendation": "Use anti-inflammatory medications, rest, and apply ice packs."
+        },
+        {
+            "name": "Chest-pain",
+            "recommendation": "Rest, lie down, avoid heavy exertion, and seek immediate medical attention if severe."
+        },
+        {
+            "name": "Runny-nose",
+            "recommendation": "Use saline nasal spray, drink warm fluids, inhale steam, and rest."
+        },
+        {
+            "name": "Vomiting",
+            "recommendation": "Sip clear fluids, eat small bland meals, and consider rest and quiet surroundings."
+        },
+        {
+            "name": "Diarrhea",
+            "recommendation": "Stay hydrated, eat a BRAT diet (bananas, rice, applesauce, toast), and avoid dairy."
+        },
+        {
+            "name": "Constipation",
+            "recommendation": "Increase fiber intake, drink plenty of water, and exercise regularly."
+        },
+        {
+            "name": "Rash",
+            "recommendation": "Avoid irritants, apply soothing lotions, and keep the skin moisturized. If it severes, contact a doctor."
+        },
+        {
+            "name": "Chills",
+            "recommendation": "Keep warm, drink warm fluids, and rest."
+        },
+        {
+            "name": "Sweating",
+            "recommendation": "Stay cool, drink water, and wear breathable clothing."
+        },
+        {
+            "name": "Abdominal-pain",
+            "recommendation": "Apply heat, eat light meals, and avoid spicy or fatty foods."
+        },
+        {
+            "name": "Swelling",
+            "recommendation": "Elevate the affected area, apply ice packs, and reduce salt intake."
+        }
+    ]
+}

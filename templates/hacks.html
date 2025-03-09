@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Hax</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #f0f0f0;
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+        header::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #branding {
+            float: left;
+        }
+        #branding img {
+            height: 50px; /* Adjust the height as needed */
+        }
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav li {
+            margin-right: 20px;
+        }
+        nav a, nav button {
+            background-color: rgb(222, 143, 140);
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover, nav button:hover {
+            background-color: rgb(229, 113, 109);
+        }
+        .symptom-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .symptom-list li {
+            width: 50%;
+            margin-bottom: 5px;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: rgb(222, 143, 140);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(229, 113, 109);
+        }
+        .title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <img src="{{ url_for('static', filename='DigiDoctor.png') }}" alt="DigiDoctor">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('severity_get') }}">Symptom Severity</a></li>
+                    <li><a href="{{ url_for('hospitals_get') }}">Price Check</a></li>
+                    <li><a href="{{ url_for('dashboard_get') }}">Dashboard</a></li>
+                    <li><a href="{{ url_for('profile_get') }}">My Account</a></li>
+                    <li>
+                        <form action="{{ url_for('logout_post') }}" method="post" style="display:inline;">
+                            <button type="submit">Log Out</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="title">Health Hax</h1>
+        <p>Please choose all applicable symptoms from the dropdown:</p>
+        <form id="symptom-form" method="POST" action="/hacks">
+            <ul class="symptom-list">
+                <li><label><input type="checkbox" name="symptoms" value="Fever"> Fever</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Cough"> Cough</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Fatigue"> Fatigue</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Headache"> Headache</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Shortness-of-breath"> Shortness of Breath</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Nausea"> Nausea</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Dizziness"> Dizziness</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Sore-throat"> Sore throat</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Muscle-pain"> Muscle pain</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Joint-pain"> Joint pain</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Chest-pain"> Chest pain</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Runny-nose"> Runny nose</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Vomiting"> Vomiting</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Diarrhea"> Diarrhea</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Constipation"> Constipation</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Rash"> Rash</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Chills"> Chills</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Sweating"> Sweating</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Abdomina-Pain"> Abdominal Pain</label></li>
+                <li><label><input type="checkbox" name="symptoms" value="Swelling"> Swelling</label></li>
+            </ul>
+
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        ...
+        {% if recommendations %}
+            <h2>Results:</h2>
+            <p>Based on your symptoms, we recommend the following:</p>
+            <ul>
+                {% for remedy in recommendations.split('"') %}
+                    {% if remedy.strip() and remedy.strip() not in [',', '[', ']'] %}
+                        <li>{{ remedy.strip() }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+...
+
+        <p>If remedies do not dissolve symptoms, see a doctor with our software:</p>
+        <button onclick="alert('Talk to a doctor feature coming soon!')">Talk to a doctor</button>
+    </div>
+</body>
+</html>

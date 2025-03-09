@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiDoctor Dashboard</title>
+    <style>
+        body {
+            font-family: tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #f0f0f0;
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+        header::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #branding {
+            float: left;
+        }
+        #branding img {
+            height: 50px; /* Adjust the height as needed */
+        }
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav li {
+            margin-right: 20px;
+        }
+        nav a, nav button {
+            background-color: rgb(222, 143, 140);
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover, nav button:hover {
+            background-color: rgb(229, 113, 109);
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .button {
+            background-color: rgb(222, 143, 140);
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .button:hover {
+            background-color: rgb(229, 113, 109);
+        }
+        #about {
+            margin-top: 50px;
+            background: #fff;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+        }
+        #about h2 {
+            font-size: 1.8em;
+        }
+        #about p {
+            line-height: 1.6em;
+        }
+        .title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 80px; /* Increased margin-top for more space from the header */
+            margin-bottom: 80px; /* Increased margin-bottom for more space from the about section */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <img src="{{ url_for('static', filename='DigiDoctor.png') }}" alt="DigiDoctor">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('severity_get') }}">Symptom Severity</a></li>
+                    <li><a href="{{ url_for('hospitals_get') }}">Price Check</a></li>
+                    <li><a href="{{ url_for('hacks_get') }}">Health Hax</a></li>
+                    <li><a href="{{ url_for('profile_get') }}">My Account</a></li>
+                    <li>
+                        <form action="{{ url_for('logout_post') }}" method="post" style="display:inline;">
+                            <button type="submit">Log Out</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h2 class="title">Dashboard</h2>
+        <div class="button-container">
+            <a href="{{ url_for('severity_get') }}" class="button">Symptom Severity</a>
+            <a href="{{ url_for('hospitals_get') }}" class="button">Price Check</a>
+            <a href="{{ url_for('hacks_get') }}" class="button">Health Hax</a>
+        </div>
+        <section id="about">
+            <h2>About DigiDoctor</h2>
+            <p>DigiDoctor was created to help people in places they are unfamiliar with, such as vacation spots in South Florida, or a random amusement park. With this, we hope to bring some form of healthcare to everyone, whether through our unique Health Hax or connecting more serious patients with healthcare specialists.</p>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #f0f0f0;
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+        header::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #branding {
+            float: left;
+        }
+        #branding img {
+            height: 50px; /* Adjust the height as needed */
+        }
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav li {
+            margin-right: 20px;
+        }
+        nav a, nav button {
+            background-color: rgb(222, 143, 140);
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover, nav button:hover {
+            background-color: rgb(229, 113, 109);
+        }
+        .sidebar {
+            float: left;
+            width: 20%;
+            background: #f4f4f4;
+            padding: 10px;
+        }
+        .main-content {
+            float: right;
+            width: 75%;
+            padding: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: rgb(222, 143, 140);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(229, 113, 109);
+        }
+        .logout-delete {
+            margin-top: 20px;
+        }
+        .logout-delete form {
+            display: inline;
+        }
+        .logout-delete a {
+            display: block;
+            color: #d9534f;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <img src="{{ url_for('static', filename='DigiDoctor.png') }}" alt="DigiDoctor">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('severity_get') }}">Symptom Severity</a></li>
+                    <li><a href="{{ url_for('hospitals_get')}}">Price Check</a></li>
+                    <li><a href="{{ url_for('hacks_get') }}">Health Hax</a></li>
+                    <li><a href="{{ url_for('dashboard_get') }}">Dashboard</a></li>
+                    <li>
+                        <form action="{{ url_for('logout_post') }}" method="post" style="display:inline;">
+                            <button type="submit">Log Out</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Options</h3>
+            <div class="logout-delete">
+                <form action="{{ url_for('logout_post') }}" method="post" style="display:inline;">
+                    <button type="submit" style="background:none;border:none;color:#d9534f;cursor:pointer;padding:0;">Log Out</button>
+                </form>
+                <a href="/delete_account">Delete Account</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2>Your Information</h2>
+            <form action="/profile" method="post">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" value="{{ user.first_name }}">
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" value="{{ user.last_name }}">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="{{ user.email }}">
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" value="{{ user.address }}">
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" value="{{ user.city }}">
+
+                <label for="state">State (Two Letters):</label>
+                <input type="text" id="state" name="state" value="{{ user.state }}">
+
+                <label for="zip_code">Zip Code:</label>
+                <input type="text" id="zip_code" name="zip_code" value="{{ user.zip_code }}">
+
+                <label for="birthdate">Birthdate (dd/mm/yyyy):</label>
+                <input type="date" id="birthdate" name="birthdate" value="{{ user.birthdate }}">
+
+                <label for="health_info">Health Information (Upload File):</label>
+                <input type="file" id="health_info" name="health_info">
+                <p><em>* While editing, please ensure all information is up to date, both physical and mental</em></p>
+
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

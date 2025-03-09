@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiDoctor Homepage</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav li {
+            margin-right: 20px;
+        }
+        nav a, nav button {
+            background-color: rgb(222, 143, 140);
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover, nav button:hover {
+            background-color: rgb(229, 113, 109);
+        }
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background-image: url("{{ url_for('static', filename='homepagebanner.jpg') }}");
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: rgb(222, 143, 140);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: rgb(229, 113, 109);
+        }
+        .about-us {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .about-us h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .about-us ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .about-us li {
+            margin: 10px 20px;
+            text-align: left;
+        }
+        .about-us .name {
+            font-weight: bold;
+        }
+        .logo img {
+            height: 50px; /* Adjust the height as needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='DigiDoctor.png') }}" alt="DigiDoctor">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('signup_get') }}">System Severity</a></li>
+                <li><a href="{{ url_for('signup_get') }}">Price Check</a></li>
+                <li><a href="{{ url_for('signup_get') }}">Health Hax</a></li>
+                <li><a href="{{ url_for('login_get') }}">Sign in</a></li>
+                <li><a href="{{ url_for('signup_get') }}">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Your Personal Health Assistant</h1>
+        <p>Get the care you need, when you need it</p>
+        <a href="#" class="btn">Talk to a doctor</a>
+    </section>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <ul>
+            <li>
+                <div class="picAn">
+                  <img src="{{ url_for('static', filename='ananya.png') }}" alt="Ananya" style="width: 35vw; min-width: 330px;"/>
+                <div class="name">Ananya Dhavamani</div>
+                <div class="desc">Hi, I'm Ananya, and I'm a sophomore at TJHSST. I'm very passionate about</div>
+                <div class="desc2">women's health--an overlooked yet misunderstood field at the intersection</div>
+                <div class="desc3">of biology, psychology and advocacy. I hope to help bridge healthcare gaps</div>
+                <div class="desc4">driven by gender and bring meaningful change.</div>
+            </li>
+            <li>
+                <div class="picAa">
+                  <img src="{{ url_for('static', filename='aarav.png') }}" alt="Aarav" style="width: 35vw; min-width: 330px;"/>
+                <div class="name">Aarav Maram</div>
+                <div class="desc">Wassup! My name is Aarav, and I'm a sophomore at TJHSST. I am interested</div>
+                <div class="desc2">in engineering, specifically aerospace and automotive, and helping people</div> 
+                <div class="desc3">get directed to the healthcare they need is important to me. With this </div>
+                <div class="desc4">project, I hope to spread awareness about general health.</div>
+            </li>
+            <li>
+                <div class="picN">
+                  <img src="{{ url_for('static', filename='noah.png') }}" alt="Noah" style="width: 35vw; min-width: 330px;"/>
+                <div class="name">Noah Joyner</div>
+                <div class="desc">Hello, my name is Noah, and I am a sophomore at TJHSST. All my life, </div>
+                <div class="desc2">I've been very passionate about computer science, and how a simple computer</div>
+                <div class="desc3">screen can bring so much change to everyone's lives, even in healthcare and </div>
+                <div class="desc4">medicare distribution. With this project, I would very much like to help  </div>
+                <div class="desc5">everyone get the care they need, no matter where they live.</div>
+            </li>
+            <li>
+                <div class="picAl">
+                  <img src="{{ url_for('static', filename='alexis.png') }}" alt="Alexis" style="width: 35vw; min-width: 330px;"/>
+                <div class="name">Alexis Lwin</div>
+                <div class="desc">Hey! My name is Alexis, and I'm a sophomore at TJHSST. I am interested in</div>
+                <div class="desc2">the bioinformatics track, and how analyzing data sets from databanks </div>
+                <div class="desc3">like Mayo Clinic and Red Cross can provide information on public health </div>
+                <div class="desc4">distribution. With this, I wish to bring awareness to how clinics are</div>
+                <div class="desc5">spread across the country, and be able to direct everyone to help. </div>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>  

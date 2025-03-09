@@ -1,0 +1,901 @@
+{
+    "prices": [
+        {
+            "name": "Mule Hospital",
+            "latitude": 38.903445,
+            "longitude": -77.0594219,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 7444.88
+                },
+                {
+                    "name": "birth",
+                    "price": 3356.78
+                },
+                {
+                    "name": "x-ray",
+                    "price": 398.89
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 668.78
+                },
+                {
+                    "name": "mri",
+                    "price": 1895.15
+                },
+                {
+                    "name": "blood",
+                    "price": 53.13
+                },
+                {
+                    "name": "tonsil",
+                    "price": 4418.5
+                },
+                {
+                    "name": "knee",
+                    "price": 15559.05
+                }
+            ]
+        },
+        {
+            "name": "Inova Cardiology - Ballston",
+            "latitude": 38.903445,
+            "longitude": -77.0594219,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 6634.78
+                },
+                {
+                    "name": "birth",
+                    "price": 3307.83
+                },
+                {
+                    "name": "x-ray",
+                    "price": 396.69
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 746.83
+                },
+                {
+                    "name": "mri",
+                    "price": 2213.64
+                },
+                {
+                    "name": "blood",
+                    "price": 61.33
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3866.76
+                },
+                {
+                    "name": "knee",
+                    "price": 14781.55
+                }
+            ]
+        },
+        {
+            "name": "Inova Neurosurgery - Ballston",
+            "latitude": 38.903445,
+            "longitude": -77.0594219,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 6707.07
+                },
+                {
+                    "name": "birth",
+                    "price": 3157.5
+                },
+                {
+                    "name": "x-ray",
+                    "price": 430.03
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 730.98
+                },
+                {
+                    "name": "mri",
+                    "price": 2180.12
+                },
+                {
+                    "name": "blood",
+                    "price": 46.46
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3920.69
+                },
+                {
+                    "name": "knee",
+                    "price": 13181.87
+                }
+            ]
+        },
+        {
+            "name": "Inova General Surgery - Arlington",
+            "latitude": 38.903445,
+            "longitude": -77.0594219,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 5768.55
+                },
+                {
+                    "name": "birth",
+                    "price": 4155.2
+                },
+                {
+                    "name": "x-ray",
+                    "price": 431.97
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 682.87
+                },
+                {
+                    "name": "mri",
+                    "price": 2185.07
+                },
+                {
+                    "name": "blood",
+                    "price": 44.83
+                },
+                {
+                    "name": "tonsil",
+                    "price": 4277.38
+                },
+                {
+                    "name": "knee",
+                    "price": 12498.14
+                }
+            ]
+        },
+        {
+            "name": "Inova Schar Heart and Vascular",
+            "latitude": 38.8573056,
+            "longitude": -77.2295346,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 6735.96
+                },
+                {
+                    "name": "birth",
+                    "price": 3425.74
+                },
+                {
+                    "name": "x-ray",
+                    "price": 416.52
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 853.46
+                },
+                {
+                    "name": "mri",
+                    "price": 1756.86
+                },
+                {
+                    "name": "blood",
+                    "price": 49.04
+                },
+                {
+                    "name": "tonsil",
+                    "price": 4361.09
+                },
+                {
+                    "name": "knee",
+                    "price": 15067.46
+                }
+            ]
+        },
+        {
+            "name": "Inova Fairfax Surgery Center",
+            "latitude": 38.8574379,
+            "longitude": -77.2289147,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 7106.38
+                },
+                {
+                    "name": "birth",
+                    "price": 3560.76
+                },
+                {
+                    "name": "x-ray",
+                    "price": 307.98
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 720.31
+                },
+                {
+                    "name": "mri",
+                    "price": 1983.65
+                },
+                {
+                    "name": "blood",
+                    "price": 46.39
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3578.38
+                },
+                {
+                    "name": "knee",
+                    "price": 14201.19
+                }
+            ]
+        },
+        {
+            "name": "Inova L.J. Murphy Children's Hospital",
+            "latitude": 38.856508,
+            "longitude": -77.227209,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 7407.86
+                },
+                {
+                    "name": "birth",
+                    "price": 2981.52
+                },
+                {
+                    "name": "x-ray",
+                    "price": 359.24
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 718.12
+                },
+                {
+                    "name": "mri",
+                    "price": 2070.47
+                },
+                {
+                    "name": "blood",
+                    "price": 45.32
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3913.15
+                },
+                {
+                    "name": "knee",
+                    "price": 12418.94
+                }
+            ]
+        },
+        {
+            "name": "Inova Women's Hospital",
+            "latitude": 38.8570354,
+            "longitude": -77.2270265,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 7340.71
+                },
+                {
+                    "name": "birth",
+                    "price": 3725.34
+                },
+                {
+                    "name": "x-ray",
+                    "price": 400.38
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 701.25
+                },
+                {
+                    "name": "mri",
+                    "price": 1814.37
+                },
+                {
+                    "name": "blood",
+                    "price": 47.14
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3394.65
+                },
+                {
+                    "name": "knee",
+                    "price": 14753.57
+                }
+            ]
+        },
+        {
+            "name": "Children's Emergency",
+            "latitude": 38.8587249,
+            "longitude": -77.2268724,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 6742.86
+                },
+                {
+                    "name": "birth",
+                    "price": 3547.79
+                },
+                {
+                    "name": "x-ray",
+                    "price": 329.38
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 557.66
+                },
+                {
+                    "name": "mri",
+                    "price": 1921.89
+                },
+                {
+                    "name": "blood",
+                    "price": 58.35
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3678.17
+                },
+                {
+                    "name": "knee",
+                    "price": 13566.4
+                }
+            ]
+        },
+        {
+            "name": "Adult Emergency",
+            "latitude": 38.8576228,
+            "longitude": -77.226552,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 5802.15
+                },
+                {
+                    "name": "birth",
+                    "price": 2806.17
+                },
+                {
+                    "name": "x-ray",
+                    "price": 388.13
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 743.65
+                },
+                {
+                    "name": "mri",
+                    "price": 1797.85
+                },
+                {
+                    "name": "blood",
+                    "price": 42.8
+                },
+                {
+                    "name": "tonsil",
+                    "price": 4012.52
+                },
+                {
+                    "name": "knee",
+                    "price": 13774.18
+                }
+            ]
+        },
+        {
+            "name": "Alexander T. Augusta Military Medical Center",
+            "latitude": 38.7060922,
+            "longitude": -77.1427805,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 6961.78
+                },
+                {
+                    "name": "birth",
+                    "price": 2960.75
+                },
+                {
+                    "name": "x-ray",
+                    "price": 405.36
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 783.85
+                },
+                {
+                    "name": "mri",
+                    "price": 1908.18
+                },
+                {
+                    "name": "blood",
+                    "price": 45.72
+                },
+                {
+                    "name": "tonsil",
+                    "price": 4736.24
+                },
+                {
+                    "name": "knee",
+                    "price": 13359.03
+                }
+            ]
+        },
+        {
+            "name": "George Washington University Hospital",
+            "latitude": 38.9013477,
+            "longitude": -77.0507851,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 7827.06
+                },
+                {
+                    "name": "birth",
+                    "price": 3264.57
+                },
+                {
+                    "name": "x-ray",
+                    "price": 424.78
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 695.38
+                },
+                {
+                    "name": "mri",
+                    "price": 1842.05
+                },
+                {
+                    "name": "blood",
+                    "price": 46.83
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3961.03
+                },
+                {
+                    "name": "knee",
+                    "price": 12063.41
+                }
+            ]
+        },
+        {
+            "name": "United Medical Center",
+            "latitude": 38.8358302,
+            "longitude": -76.9848906,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 6950.67
+                },
+                {
+                    "name": "birth",
+                    "price": 3192.38
+                },
+                {
+                    "name": "x-ray",
+                    "price": 396.4
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 711.93
+                },
+                {
+                    "name": "mri",
+                    "price": 2066.92
+                },
+                {
+                    "name": "blood",
+                    "price": 49.71
+                },
+                {
+                    "name": "tonsil",
+                    "price": 4365.31
+                },
+                {
+                    "name": "knee",
+                    "price": 14263.75
+                }
+            ]
+        },
+        {
+            "name": "MedStar Georgetown University Hospital",
+            "latitude": 38.9114671,
+            "longitude": -77.0751944,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 7565.21
+                },
+                {
+                    "name": "birth",
+                    "price": 3432.13
+                },
+                {
+                    "name": "x-ray",
+                    "price": 354.78
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 653.91
+                },
+                {
+                    "name": "mri",
+                    "price": 2028.0
+                },
+                {
+                    "name": "blood",
+                    "price": 48.03
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3311.65
+                },
+                {
+                    "name": "knee",
+                    "price": 13803.56
+                }
+            ]
+        },
+        {
+            "name": "Sibley Memorial Hospital",
+            "latitude": 38.9367041,
+            "longitude": -77.1088024,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 7115.66
+                },
+                {
+                    "name": "birth",
+                    "price": 3588.67
+                },
+                {
+                    "name": "x-ray",
+                    "price": 405.68
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 694.73
+                },
+                {
+                    "name": "mri",
+                    "price": 2036.48
+                },
+                {
+                    "name": "blood",
+                    "price": 40.76
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3984.13
+                },
+                {
+                    "name": "knee",
+                    "price": 14382.86
+                }
+            ]
+        },
+        {
+            "name": "Virginia Hospital Center",
+            "latitude": 38.8899636,
+            "longitude": -77.1274891,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 7322.06
+                },
+                {
+                    "name": "birth",
+                    "price": 3082.07
+                },
+                {
+                    "name": "x-ray",
+                    "price": 387.67
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 747.91
+                },
+                {
+                    "name": "mri",
+                    "price": 2171.54
+                },
+                {
+                    "name": "blood",
+                    "price": 53.73
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3712.92
+                },
+                {
+                    "name": "knee",
+                    "price": 13763.3
+                }
+            ]
+        },
+        {
+            "name": "Dominion Hospital",
+            "latitude": 38.8702684,
+            "longitude": -77.1584034,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 7531.43
+                },
+                {
+                    "name": "birth",
+                    "price": 3358.89
+                },
+                {
+                    "name": "x-ray",
+                    "price": 389.81
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 755.44
+                },
+                {
+                    "name": "mri",
+                    "price": 1972.7
+                },
+                {
+                    "name": "blood",
+                    "price": 50.86
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3795.21
+                },
+                {
+                    "name": "knee",
+                    "price": 14597.06
+                }
+            ]
+        },
+        {
+            "name": "Inova Alexandria Hospital",
+            "latitude": 38.822344,
+            "longitude": -77.1049503,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 6508.22
+                },
+                {
+                    "name": "birth",
+                    "price": 3553.43
+                },
+                {
+                    "name": "x-ray",
+                    "price": 335.55
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 735.44
+                },
+                {
+                    "name": "mri",
+                    "price": 1886.59
+                },
+                {
+                    "name": "blood",
+                    "price": 61.61
+                },
+                {
+                    "name": "tonsil",
+                    "price": 4130.86
+                },
+                {
+                    "name": "knee",
+                    "price": 15354.05
+                }
+            ]
+        },
+        {
+            "name": "Inova Mount Vernon Hospital",
+            "latitude": 38.7396775,
+            "longitude": -77.0767919,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 6534.59
+                },
+                {
+                    "name": "birth",
+                    "price": 2860.86
+                },
+                {
+                    "name": "x-ray",
+                    "price": 406.17
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 675.29
+                },
+                {
+                    "name": "mri",
+                    "price": 1686.87
+                },
+                {
+                    "name": "blood",
+                    "price": 47.26
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3556.95
+                },
+                {
+                    "name": "knee",
+                    "price": 14927.12
+                }
+            ]
+        },
+        {
+            "name": "Northern Virginia Mental Health Institute",
+            "latitude": 38.8578426,
+            "longitude": -77.2322642,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 7260.58
+                },
+                {
+                    "name": "birth",
+                    "price": 2952.34
+                },
+                {
+                    "name": "x-ray",
+                    "price": 363.43
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 646.72
+                },
+                {
+                    "name": "mri",
+                    "price": 1853.67
+                },
+                {
+                    "name": "blood",
+                    "price": 48.85
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3803.01
+                },
+                {
+                    "name": "knee",
+                    "price": 13045.31
+                }
+            ]
+        },
+        {
+            "name": "Inova Fairfax Hospital",
+            "latitude": 38.856988,
+            "longitude": -77.2279989,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 7798.3
+                },
+                {
+                    "name": "birth",
+                    "price": 3472.58
+                },
+                {
+                    "name": "x-ray",
+                    "price": 371.99
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 619.2
+                },
+                {
+                    "name": "mri",
+                    "price": 2032.81
+                },
+                {
+                    "name": "blood",
+                    "price": 51.7
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3249.48
+                },
+                {
+                    "name": "knee",
+                    "price": 14683.12
+                }
+            ]
+        },
+        {
+            "name": "INOVA Health-Plex Lorton",
+            "latitude": 38.7029357,
+            "longitude": -77.2267905,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 6220.29
+                },
+                {
+                    "name": "birth",
+                    "price": 3510.36
+                },
+                {
+                    "name": "x-ray",
+                    "price": 373.29
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 687.58
+                },
+                {
+                    "name": "mri",
+                    "price": 1993.41
+                },
+                {
+                    "name": "blood",
+                    "price": 43.93
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3836.86
+                },
+                {
+                    "name": "knee",
+                    "price": 14886.97
+                }
+            ]
+        },
+        {
+            "name": "INOVA Emergency Room",
+            "latitude": 38.8381495,
+            "longitude": -77.3102185,
+            "operation": [
+                {
+                    "name": "appendix",
+                    "price": 6435.89
+                },
+                {
+                    "name": "birth",
+                    "price": 3477.42
+                },
+                {
+                    "name": "x-ray",
+                    "price": 386.9
+                },
+                {
+                    "name": "cat-scan",
+                    "price": 838.44
+                },
+                {
+                    "name": "mri",
+                    "price": 2007.05
+                },
+                {
+                    "name": "blood",
+                    "price": 44.64
+                },
+                {
+                    "name": "tonsil",
+                    "price": 3626.48
+                },
+                {
+                    "name": "knee",
+                    "price": 15502.4
+                }
+            ]
+        }
+    ]
+}
